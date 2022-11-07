@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    li {
+      list-style: none;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .users {
+      background-color: aliceblue;
+      margin-bottom: 30px;
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .user {
+      padding: 20px 40px 20px 3px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      background-color: rgb(2, 187, 11);
+
+    }
+    .user.dis{
+      opacity: .5;
+    }
+    .user-name {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .user-tel {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .admin {
+      padding: 20px;
+      border-radius: 12px;
+      background-color: bisque;
+    }
+    h2 {
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .state {
+      transform: translateX(90%);
+      position: relative;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .on {
+      text-align: center;
+      line-height: 45px;
+      cursor: pointer;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: green;
+      color: #fff;
+      font-weight: 700;
+    }
+    .off {
+      text-align: center;
+      line-height: 45px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: grey;
+      display: none;
+      color: #fff;
+      font-weight: 700;
+    }
+    button {
+      cursor: pointer;
+    }
+    .ad {
+      display: flex;
+      column-gap: 30px;
+    }
+    .ad-name {
+      display:inline-block;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .ad-tel {
+      display:inline-block;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .ad-status {
+      display:inline-block;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .container>ul>li button{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Users panel</h1>
+    <ul class="users">
+    </ul>
+
+    <h2>Admin panel</h2>
+    <div class="admin">
+      <div class="state">
+        <span class="on">on</span>
+        <span class="off">off</span>
+      </div>
+      <ul class="users">
+
+      </ul>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
